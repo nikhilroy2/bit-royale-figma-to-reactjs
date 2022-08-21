@@ -1,0 +1,29 @@
+#Header {
+  height: 242px;
+  width: 100%;
+  background: url("../../assets/layout/header/header_bg.png") no-repeat;
+}
+
+#Header .header_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#Header .header_list a {
+  padding: 15px;
+  display: inline-block;
+  font-size: 3.2rem;
+}
+
+#Header .header_list .logo_action {
+  padding-top: 8.5rem;
+}
+/*# sourceMappingURL=header.css.map */
