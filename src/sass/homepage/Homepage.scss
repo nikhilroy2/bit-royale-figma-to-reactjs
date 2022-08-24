@@ -5,9 +5,69 @@
       no-repeat;
     margin-top: -2rem;
     text-align: center;
-    .circle_img{
-        display: inline-block;
-        margin-top: 50px;
+    .circle_img {
+      display: inline-block;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 3.2rem;
+      max-width: 777px;
+      margin: auto;
+      min-height: 128px;
+    }
+    .btn_know {
+      display: inline-block;
+      width: 482px;
+      height: 155px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  #Section2 {
+    margin-top: -16rem;
+    background: url("../../assets/homepage/ArtWeb.png") center/100% 100% no-repeat;
+    padding-bottom: 15rem;
+    .section_title {
+      text-align: center;
+      img {
+        margin-top: -31px;
+        margin-bottom: 2rem;
+      }
+    }
+    .section_body {
+      .video_frame {
+        iframe {
+          display: block;
+          margin: auto;
+          min-width: 1003px;
+          height: 606px;
+        }
+      }
+      .content_wrapper {
+        max-width: 930px;
+        font-size: 2.1rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        .paragraph {
+          margin-bottom: 71px;
+          margin-top: 72px;
+        }
+        .btn_more {
+          width: 375px;
+          height: 120px;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 39px;
+          text-align: center;
+          color: #163958;
+          background: url("../../assets/homepage/btn_more.png");
+          cursor: pointer;
+          border: none;
+          padding: 20px 70px;
+        }
+      }
     }
   }
 }
