@@ -25,7 +25,11 @@ a {
   color: #fff;
   text-decoration: none;
 }
-
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
 .section_global_title {
   text-align: center;
   position: relative;
@@ -56,4 +60,19 @@ a {
   cursor: pointer;
   border: none;
   padding: 20px 62px;
+}
+
+.btn_nft {
+  position: relative;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 4px 4px 1px #2e1b79;
+  }
 }

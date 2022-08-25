@@ -6,6 +6,8 @@ function Homepage(props) {
             <Section1></Section1>
             <Section2></Section2>
             <Section3></Section3>
+            <Section4></Section4>
+            <Section5></Section5>
         </div>
     );
 }
@@ -155,4 +157,166 @@ const Section3 = () => {
             </div>
         </div>
     </section>
+}
+
+const Section4 = () => {
+    return (
+        <section id="Section4">
+            <div className="section_title section_global_title">
+                <img src={require('../../../assets/homepage/t.png')} alt="img" />
+                <span>HOW <br />
+                    TO PLAY</span>
+            </div>
+
+            <div className="body">
+                <p className="paragraph">
+                    After defeating your opponent (on Boss Mode or PVP), they will drop an amount of coins that can be accumulated to buy new heroes or other game items.
+                    <br /><br />
+                    Now, to help them, you must assemble a team up to 15 Heroes, and battle in 2 different ways
+                </p>
+                <div className="card_wrapper">
+                    <div className="card">
+                        <img className='card_bg' src={require('../../../assets/homepage/card_bg.png')} alt="img" />
+                        <img className='card_bg_helper' src={require('../../../assets/homepage/card_bg_helper.png')} alt="img" />
+                        <div className="card_content">
+                            <h3 className="title">
+                                Boss Mode (PVE)
+                            </h3>
+                            <p>
+                                In this mode, 5 of your heroes will battle against 1 Boss. Each of them have their power and characteristics, so you must be smart in choosing your team.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="card card_2">
+                        <img className='card_bg' src={require('../../../assets/homepage/card_bg2.png')} alt="img" />
+                        <img className='card_bg_helper card_bg_helper2' src={require('../../../assets/homepage/card_bg_helper2.png')} alt="img" />
+                        <div className="card_content">
+                            <h3 className="title">
+                                Player vs. Player Mode (PVP)
+                            </h3>
+                            <p>
+                                In this mode, 5 of your heroes will battle against 5 heroes of another user. Here, you can choose which enemy to attack and which of your Heroes will deliver the blow!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="footer" >
+                <button>
+                    <img src={require('../../../assets/homepage/more_bit_royale.png')} alt="img" />
+                </button>
+            </div>
+        </section>
+    )
+}
+const Section5 = () => {
+    const section_object = [
+        {
+            id: 1,
+            title: 'Heroes',
+            img: require('../../../assets/homepage/heroes.png'),
+            description: `Each hero comes from a CHEST, and they can come in different classes with a different level of Attack and Health:`,
+            footer_list: <ul>
+                <li style={{ '--color': 'rgba(167, 167, 167, 1)' }}>
+                    Common
+                </li>
+                <li style={{ '--color': 'rgba(212, 147, 49, 1)' }}>
+                    Uncommon
+                </li>
+                <li style={{ '--color': 'rgba(248, 49, 120, 1)' }}>
+                    Rare
+                </li>
+                <li style={{ '--color': 'rgba(35, 242, 255, 1)' }}>
+                    Mythical
+                </li>
+                <li style={{ '--color': 'rgba(235, 227, 44, 1)' }}>
+                    Ultimate
+                </li>
+            </ul>
+        },
+        {
+            id: 2,
+            title: 'Trainers ',
+            img: require('../../../assets/homepage/trainers.png'),
+            description: `Trainers also come inside CHESTS and are divided into 3 classes, each reducing a portion of a hero’s recovering time:`,
+            footer_list: <ul>
+                <li style={{ '--color': 'rgba(167, 167, 167, 1)' }}>
+                    Common
+                </li>
+
+                <li style={{ '--color': 'rgba(248, 49, 120, 1)' }}>
+                    Rare
+                </li>
+                <li style={{ '--color': 'rgba(62, 151, 255, 1)' }}>
+                    Legendary
+                </li>
+
+            </ul>
+        },
+        {
+            id: 3,
+            title: <> Training Camp <small>(Coming Soon)</small></>,
+            img: require('../../../assets/homepage/training.png'),
+            description: `A Training Camp is made to increase the amount of Heroes in your team and can be divided into 3 classes:`,
+            footer_list: <ul>
+                <li style={{ '--color': 'rgba(167, 167, 167, 1)' }}>
+                    Small
+                </li>
+
+                <li style={{ '--color': 'rgba(248, 49, 120, 1)' }}>
+                    Medium
+                </li>
+                <li style={{ '--color': 'rgba(255, 204, 0, 1)' }}>
+                    Large
+                </li>
+            </ul>
+        },
+    ]
+    return (
+        <section id="Section5">
+            <div className="section_title section_global_title">
+                <img src={require('../../../assets/homepage/t.png')} alt="img" />
+                <span>NFTs</span>
+            </div>
+            <div className="section_body">
+                <div className="card_wrapper">
+                    {
+                        section_object.map(v => {
+                            return (
+                                <div key={v.id} className="nft_card">
+                                    <div className="card_title">
+                                        <img src={v.img} alt="" />
+                                        <h3>
+                                            {v.title}
+                                        </h3>
+                                    </div>
+                                    <div className="break"></div>
+                                    <div className="card_body">
+                                        <p>
+                                            {v.description}
+                                        </p>
+                                    </div>
+                                    <div className="card_footer">
+                                        {v.footer_list}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+
+
+                <div className="btn_wrapper">
+                    <button className="btn_nft">
+                        <img src={require('../../../assets/homepage/buy_nft.png')} alt="img" />
+                        <span>
+                            BUY NFT
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    )
 }
