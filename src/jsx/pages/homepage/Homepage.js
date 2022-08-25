@@ -117,6 +117,41 @@ const Section3 = () => {
                         </span>
                     </div>
                 </div>
+                <div className="body">
+                    <div className="content">
+                        <div className="content_title">
+                            <img height={85} width={85} src={require('../../../assets/icons/icon2.png')} alt="icon" />
+                            <span>Play To Earn</span>
+                            <img height={85} width={85} src={require('../../../assets/icons/icon1.png')} alt="icon" />
+
+                        </div>
+                        <div className="content_description">
+                            <p>
+                                After defeating your opponent (on Boss Mode or PVP), they will drop an amount of coins that can be accumulated to buy new heroes or other game items.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="content">
+                        <div className="content_title">
+                            <img src={require('../../../assets/icons/icon3.png')} alt="icon" />
+                            <span>Staking</span>
+                            <img src={require('../../../assets/icons/icon4.png')} alt="icon" />
+                            <img className='coming_soon_icon' src={require('../../../assets/icons/icon5.png')} alt="icon" />
+                        </div>
+                        <div className="content_description">
+                            <p>
+                                Stake your "BCOMP" tokens to earn fixed APY profits and still be able to participate in new holder-exclusive launches within the Bit Comp LaunchPad.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer">
+                    <button className="btn_more">
+                        READ MORE ON
+                        OUR WHITEPAPER
+                    </button>
+                </div>
             </div>
         </div>
     </section>

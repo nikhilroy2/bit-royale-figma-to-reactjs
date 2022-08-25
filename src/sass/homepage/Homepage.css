@@ -63,20 +63,6 @@
   margin-top: 72px;
 }
 
-#Homepage #Section2 .section_body .content_wrapper .btn_more {
-  width: 375px;
-  height: 120px;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 39px;
-  text-align: center;
-  color: #163958;
-  background: url("../../assets/homepage/btn_more.png");
-  cursor: pointer;
-  border: none;
-  padding: 20px 70px;
-}
-
 #Homepage #Section3 {
   background: url("../../assets/homepage/section_3bg.png") center/cover no-repeat;
   margin-top: -11rem;
@@ -159,5 +145,65 @@
 #Homepage #Section3 .section_body .how_to_earn_wrapper .content {
   position: relative;
   z-index: 2;
+}
+
+#Homepage #Section3 .section_body .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 80px;
+}
+
+#Homepage #Section3 .section_body .body .content {
+  max-width: 734px;
+  padding: 4rem;
+  background: #4c7696;
+  border-radius: 29px;
+  position: relative;
+}
+
+#Homepage #Section3 .section_body .body .content:first-child {
+  margin-right: 96px;
+}
+
+#Homepage #Section3 .section_body .body .content .content_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+  color: #5b88ab;
+  text-shadow: 5px 5px #ffffff, -5px -5px #ffffff, -5px 5px #ffffff, 5px -5px #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Homepage #Section3 .section_body .body .content .content_title span {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: inline-block;
+}
+
+#Homepage #Section3 .section_body .body .content .content_title .coming_soon_icon {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+
+#Homepage #Section3 .section_body .body .content .content_description p {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
 }
 /*# sourceMappingURL=Homepage.css.map */

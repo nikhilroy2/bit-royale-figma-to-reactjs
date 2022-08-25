@@ -52,4 +52,18 @@ a {
   display: block;
   margin-top: 1rem;
 }
+
+.btn_more {
+  width: 375px;
+  height: 120px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #163958;
+  background: url("../../assets/homepage/btn_more.png");
+  cursor: pointer;
+  border: none;
+  padding: 20px 62px;
+}
 /*# sourceMappingURL=global.css.map */
