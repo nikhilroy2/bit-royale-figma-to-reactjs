@@ -30,6 +30,8 @@
   margin-top: -16rem;
   background: url("../../assets/homepage/ArtWeb.png") center/100% 100% no-repeat;
   padding-bottom: 15rem;
+  position: relative;
+  z-index: 2;
 }
 
 #Homepage #Section2 .section_title {
@@ -73,5 +75,89 @@
   cursor: pointer;
   border: none;
   padding: 20px 70px;
+}
+
+#Homepage #Section3 {
+  background: url("../../assets/homepage/section_3bg.png") center/cover no-repeat;
+  margin-top: -11rem;
+  padding-top: 13rem;
+}
+
+#Homepage #Section3 .section_body {
+  text-align: center;
+}
+
+#Homepage #Section3 .section_body .paragraph {
+  max-width: 925px;
+  margin: auto;
+  margin-top: 2.8rem;
+  font-size: 2.1rem;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#Homepage #Section3 .section_body .buyback_wrapper {
+  margin-bottom: 43px;
+}
+
+#Homepage #Section3 .section_body .content_1_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Homepage #Section3 .section_body .bcomp_wrapper {
+  max-width: 734px;
+}
+
+#Homepage #Section3 .section_body .bcomp_wrapper .title {
+  position: relative;
+}
+
+#Homepage #Section3 .section_body .bcomp_wrapper .body .bcomp_paragraph {
+  background: #4c7696;
+  border-radius: 29px;
+  padding: 27px 24px 45px 18px;
+}
+
+#Homepage #Section3 .section_body .buy_bcomp_wrapper {
+  margin-left: 83px;
+}
+
+#Homepage #Section3 .section_body .buy_bcomp_wrapper .buy_bcomp_btn {
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-top: -6rem;
+}
+
+#Homepage #Section3 .section_body .how_to_earn_wrapper {
+  position: relative;
+  margin-top: 12rem;
+}
+
+#Homepage #Section3 .section_body .how_to_earn_wrapper .section_global_title {
+  position: relative;
+  max-width: 375px;
+  margin: auto;
+}
+
+#Homepage #Section3 .section_body .how_to_earn_wrapper .chest_img {
+  position: absolute;
+  bottom: 50%;
+  left: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#Homepage #Section3 .section_body .how_to_earn_wrapper .content {
+  position: relative;
+  z-index: 2;
 }
 /*# sourceMappingURL=Homepage.css.map */

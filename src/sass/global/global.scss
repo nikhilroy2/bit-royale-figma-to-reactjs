@@ -25,3 +25,22 @@ a {
   color: #fff;
   text-decoration: none;
 }
+
+.section_global_title {
+  text-align: center;
+  position: relative;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 51px;
+    text-align: center;
+    color: #5a310a;
+    line-height: 51px;
+    display: block;
+    margin-top: 1rem;
+  }
+}

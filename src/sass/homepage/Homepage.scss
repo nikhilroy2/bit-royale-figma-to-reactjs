@@ -26,8 +26,11 @@
   }
   #Section2 {
     margin-top: -16rem;
-    background: url("../../assets/homepage/ArtWeb.png") center/100% 100% no-repeat;
+    background: url("../../assets/homepage/ArtWeb.png") center/100% 100%
+      no-repeat;
     padding-bottom: 15rem;
+    position: relative;
+    z-index: 2;
     .section_title {
       text-align: center;
       img {
@@ -66,6 +69,76 @@
           cursor: pointer;
           border: none;
           padding: 20px 70px;
+        }
+      }
+    }
+  }
+  #Section3 {
+    background: url("../../assets/homepage/section_3bg.png") center/ cover
+      no-repeat;
+    margin-top: -11rem;
+
+    padding-top: 13rem;
+
+    .section_body {
+      text-align: center;
+      .paragraph {
+        max-width: 925px;
+        margin: auto;
+        margin-top: 2.8rem;
+        font-size: 2.1rem;
+        line-height: 26px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .buyback_wrapper {
+        margin-bottom: 43px;
+      }
+      .content_1_wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      .bcomp_wrapper {
+        max-width: 734px;
+        .title {
+          position: relative;
+        }
+        .body {
+          .bcomp_paragraph {
+            background: #4c7696;
+            border-radius: 29px;
+            padding: 27px 24px 45px 18px;
+          }
+        }
+      }
+      .buy_bcomp_wrapper {
+        margin-left: 83px;
+        .buy_bcomp_btn {
+          display: block;
+          cursor: pointer;
+          background: transparent;
+          border: none;
+          outline: none;
+          margin-top: -6rem;
+        }
+      }
+      .how_to_earn_wrapper {
+        position: relative;
+        margin-top: 12rem;
+        .section_global_title {
+          position: relative;
+          max-width: 375px;
+          margin: auto;
+        }
+        .chest_img {
+          position: absolute;
+          bottom: 50%;
+          left: 40%;
+          transform: translateX(-50%);
+        }
+        .content {
+          position: relative;
+          z-index: 2;
         }
       }
     }

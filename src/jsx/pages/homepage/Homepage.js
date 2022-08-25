@@ -69,6 +69,55 @@ const Section2 = () => {
 
 const Section3 = () => {
     return <section id="Section3">
+        <div className="section_title section_global_title">
+            <img src={require('../../../assets/homepage/t.png')} alt="img" />
+            <span>TOKENOMICS</span>
+        </div>
+        <div className="section_body">
+            <p className="paragraph">
+                With an innovative savings and reinvestment system, we are different from all current projects on the Blockchain!
+                <br /><br />
+                As you play, it will be necessary to reactivate your NFTs with "BUSD" after a certain level of profit. That means there’ll always be a BUSD balance generated for the project, Which will be used to buy back the "BComp" token within the DEX's, creating stability for the token.
+                <br /><br />
+                With the purchased value of the "BComp" token, the balance will be redirected to the reward pool wallet and some tokens can also be burned, creating a shortage for the "BComp" token.
 
+            </p>
+
+            <div className="buyback_wrapper">
+                <img src={require('../../../assets/homepage/buyback_img.png')} alt="img" />
+            </div>
+
+            <div className="content_1_wrapper">
+                <div className="bcomp_wrapper">
+                    <div className="title">
+                        <img src={require('../../../assets/homepage/bcomp.png')} alt="img" />
+                    </div>
+                    <div className="body">
+                        <p className="bcomp_paragraph">
+                            The BComp token is BCOMP is the official token of the entire Bit Comp project, involving game NFT, LaunchPad and future projects.
+                            <br /><br />
+                            It is issued on Binance Smart Chain and aims to create a strong and sustainable token in the long term, generating stability and income for its investors.
+
+                        </p>
+                    </div>
+                </div>
+                <div className="buy_bcomp_wrapper">
+                    <img src={require('../../../assets/homepage/buy_bcomp.png')} alt="img" />
+                    <button className="buy_bcomp_btn">
+                        <img src={require('../../../assets/homepage/buy_bcomp_btn.png')} alt="img" />
+                    </button>
+                </div>
+            </div>
+            <div className="how_to_earn_wrapper">
+                <div className="section_global_title">
+                    <img className='chest_img' src={require('../../../assets/homepage/chest.png')} alt="img" />
+                    <div className="content">
+                        <img src={require('../../../assets/homepage/t.png')} alt="img" />
+                        <span>HOW TO <br /> EARN?
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 }
