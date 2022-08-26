@@ -319,11 +319,6 @@ const Section5 = () => {
 
             <div className="section_body_slider">
                 <SliderCard></SliderCard>
-                <div className="slider_control">
-                    <button className="control_btn" style={{left: '50%'}}>
-                        <img src={require('../../../assets/slider/slider_control.png')} alt="img" />
-                    </button>
-                </div>
             </div>
         </section>
     )
