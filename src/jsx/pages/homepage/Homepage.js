@@ -568,6 +568,43 @@ const Section6 = () => {
 }
 
 const Section7 = () => {
+    const section_object = [
+        {
+            id: 1,
+            img: '',
+            title: 'Rafaela Nunes',
+            role: 'FOUNDER',
+            description: `Graduated from UNIFOR-MG and cryptocurrency enthusiast since 2017, Rafaela is the creator and founder of Bit Comp, idealizing to create an innovative and audacious project.`,
+        },
+        {
+            id: 2,
+            img: '',
+            title: 'Jaime Caetano',
+            role: 'CEO',
+            description: `Graduated in Production Engineering from UNIFOR-MG, with experience in the financial and crypto markets since 2016, Jaime is the CEO and responsible for the administration of the project.`,
+        },
+        {
+            id: 3,
+            img: '',
+            title: 'Dmitry Eremenko',
+            role: 'CBD',
+            description: `An expert in solidity and blockchain, Dmitry is responsible for Web3 development and project backend.`,
+        },
+        {
+            id: 4,
+            img: '',
+            title: 'João Pedro',
+            role: 'Visual Artist',
+            description: `Specialist in illustrations and 2D arts, João is the graphic artist of much of the project.`,
+        },
+        {
+            id: 5,
+            img: '',
+            title: 'Lorena Mota',
+            role: 'PIXELART ARTIST',
+            description: `Lorena is responsible for creating the design of all characters (NFTs) in the project.`,
+        },
+    ]
     return (
         <section id="Section7">
             <div className="section_title">
@@ -576,14 +613,89 @@ const Section7 = () => {
             </div>
             <div className="section_body">
                 <div className="team_card_wrapper">
-                    <div className="card">
-                        <div className="title"></div>
-                        <div className="body">
-                            
-                        </div>
-                    </div>
+                    {
+                        section_object.map(v => {
+                            return (
+                                <div className="card" key={v.id}>
+                                    <div className="title"></div>
+                                    <div className="body">
+                                        <h3>
+                                            {v.title}
+                                        </h3>
+                                        <strong>{v.role}</strong>
+                                        <p>
+                                            {v.description}
+                                        </p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+
                 </div>
+
+
+            </div>
+            <div className="section_footer">
+                <img src={require('../../../assets/homepage/welcome.png')} alt="img" />
+                <p>
+                    Welcome my royal friend!
+                    <br /><br />
+                    In the land, we are fighting a perverse King who hates Magical Creatures!
+                    <br /><br />
+                    I’m sure you’re a brave soul who wants the good to prevail.
+                    <br /><br />
+                    So join the resistance and become part of a community!
+
+                </p>
+
+                <SocialList></SocialList>
             </div>
         </section>
+    )
+}
+
+
+const SocialList = () => {
+    const list_object = [
+        {
+            id: 1,
+            name: 'Twitter',
+            img: require('../../../assets/icons/twitter.png'),
+            link: '#',
+        },
+        {
+            id: 2,
+            name: 'Discord',
+            img: require('../../../assets/icons/discord.png'),
+            link: '#',
+        },
+        {
+            id: 3,
+            name: 'telegram',
+            img: require('../../../assets/icons/telegram.png'),
+            link: '#',
+        },
+        {
+            id: 4,
+            name: 'Instragram',
+            img: require('../../../assets/icons/instragram.png'),
+            link: '#',
+        },
+    ]
+    return (
+        <ul id="social_list">
+            {
+                list_object.map(v => {
+                    return (
+                        <li key={v.id}>
+                            <a href={v.link}>
+                                <img src={v.img} alt={v.name} />
+                            </a>
+                        </li>
+                    )
+                })
+            }
+        </ul>
     )
 }

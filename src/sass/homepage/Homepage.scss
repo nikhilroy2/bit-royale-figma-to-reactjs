@@ -416,15 +416,15 @@
     background: url("../../assets/homepage/roadmap_bg.png") center/cover
       no-repeat;
     position: relative;
-    .roadmap_draw1{
+    .roadmap_draw1 {
       position: absolute;
-      bottom: 0;
+      bottom: -27%;
       right: 0;
     }
-    .roadmap_draw2{
+    .roadmap_draw2 {
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: -16%;
+      left: -19%;
     }
     .section_title {
       text-align: center;
@@ -495,6 +495,116 @@
           text-transform: uppercase;
           color: #ffffff;
           text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+  #Section7 {
+    padding-top: 300px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+        0deg,
+        #ccdbff 0%,
+        #c9d9ff 40%,
+        #c1d3ff 61%,
+        #b4c8ff 78%,
+        #a0b9ff 93%,
+        #94b0ff 100%
+      );
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .section_title {
+      font-size: 6rem;
+      line-height: 73px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #5070bf;
+      max-width: 383px;
+      margin: auto;
+    }
+    .section_body {
+      .team_card_wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: auto;
+        margin-top: 4.7rem;
+        max-width: 1200px;
+        .card {
+          max-width: 368px;
+          background: #6b84c1;
+          border-radius: 30px;
+          padding: 2rem;
+          margin-bottom: 7rem;
+          margin-right: 4.7rem;
+          &:last-child,
+          &:nth-child(3) {
+            margin-right: 0px;
+          }
+          .title {
+            width: 329px;
+            height: 203px;
+            background: #d9d9d9;
+            border-radius: 37px;
+            margin-bottom: 2rem;
+          }
+          .body {
+            text-align: center;
+            h3 {
+              font-size: 3.2rem;
+              line-height: 39px;
+              text-transform: uppercase;
+              color: #ffffff;
+              margin: 0;
+            }
+            strong {
+              display: block;
+              font-size: 2.1rem;
+              line-height: 26px;
+              color: #314881;
+              margin: 0;
+            }
+            p {
+              font-size: 2.1rem;
+              line-height: 26px;
+              color: #ffffff;
+              margin: 0;
+              margin-top: 2rem;
+            }
+          }
+        }
+      }
+    }
+    .section_footer {
+      text-align: center;
+      p {
+        font-size: 2.1rem;
+        line-height: 26px;
+        text-align: center;
+        color: #455a8d;
+        margin-top: 4.3rem;
+        margin-bottom: 4.7rem;
+      }
+      #social_list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 5.3rem;
+        li {
+          margin-right: 3.5rem;
+          margin-bottom: 2rem;
+          &:last-child {
+            margin-right: 0px;
+          }
         }
       }
     }
