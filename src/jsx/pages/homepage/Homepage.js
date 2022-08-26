@@ -9,6 +9,7 @@ function Homepage(props) {
             <Section4></Section4>
             <Section5></Section5>
             <Section6></Section6>
+            <Section7></Section7>
         </div>
     );
 }
@@ -560,6 +561,27 @@ const Section6 = () => {
                         })
                     }
 
+                </div>
+            </div>
+        </section>
+    )
+}
+
+const Section7 = () => {
+    return (
+        <section id="Section7">
+            <div className="section_title">
+                GET TO KNOW
+                OUR TEAM
+            </div>
+            <div className="section_body">
+                <div className="team_card_wrapper">
+                    <div className="card">
+                        <div className="title"></div>
+                        <div className="body">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
