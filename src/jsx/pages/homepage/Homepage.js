@@ -8,6 +8,7 @@ function Homepage(props) {
             <Section3></Section3>
             <Section4></Section4>
             <Section5></Section5>
+            <Section6></Section6>
         </div>
     );
 }
@@ -319,6 +320,8 @@ const Section5 = () => {
 
             <div className="section_body_slider">
                 <SliderCard></SliderCard>
+
+                <div className="break"></div>
             </div>
         </section>
     )
@@ -423,5 +426,142 @@ const SliderCard = () => {
                 }
             </div>
         </div>
+    )
+}
+
+const Section6 = () => {
+    const section_object = [
+        {
+            id: 1,
+            title: `1ST QUARTER
+            OF 2022
+            `,
+            list: <ul>
+                <li>
+                    Project Concept ✅
+                </li>
+                <li>
+                    First Version of the Website ✅
+                </li>
+                <li>
+                    Star developing the Token and the NFT Game ✅
+                </li>
+            </ul>,
+        },
+        {
+            id: 2,
+            title: `2ND QUARTER
+            OF 2022
+            `,
+            list: <ul>
+                <li>
+                    SecondVersion of the Website ✅
+                </li>
+                <li>
+                    Star NFT Sale ✅
+                </li>
+                <li>
+                    Private Sale ✅
+                </li>
+                <li>
+                    Marketing Campaign ✅
+                </li>
+                <li>
+                    IDO/Public Sale ✅
+                </li>
+            </ul>,
+        },
+        {
+            id: 3,
+            title: `3RD QUARTER
+            OF 2022
+            `,
+            list: <ul>
+                <li>
+                    Beta Test NFT Game 🔜
+                </li>
+                <li>
+                    Launch NFT Game 🔜
+                </li>
+                <li>
+                    Create LaunchPad Website 🔜
+                </li>
+                <li>
+                    Launch Staking
+                </li>
+                <li>
+                    System 🔜
+                </li>
+            </ul>,
+        },
+        {
+            id: 4,
+            title: `4TH QUARTER
+            OF 2022
+            `,
+            list: <ul>
+                <li>
+                    Community Events 🔜
+                </li>
+                <li>
+                    Launch Mobile Version🔜
+                </li>
+                <li>
+                    Monetization of the Website and other Social Networks 🔜
+                </li>
+                <li>
+                    NFT MarketPlace 🔜
+                </li>
+            </ul>,
+        },
+        {
+            id: 5,
+            title: `1ST QUARTER
+            OF 2023
+            `,
+            list: <ul>
+                <li>
+                    New concept projects for BitComp 🔜
+                </li>
+                <li>
+                    Launch official Bit Compr Netwo12   `rk (Bit Social) 🔜
+                </li>
+                <li>
+                    Research Startups for BitComp LaunchPad 🔜
+                </li>
+            </ul>,
+        },
+    ]
+    return (
+        <section id="Section6">
+            <img src={require('../../../assets/homepage/roadmap_draw1.png')} alt="" className="roadmap_draw1" />
+            <img src={require('../../../assets/homepage/roadmap_draw2.png')} alt="" className="roadmap_draw2" />
+            <div className="section_title">
+                <img src={require('../../../assets/homepage/roadmap_title.png')} alt="img" />
+            </div>
+            <div className="section_body">
+                <div className="roadmap_card_wrapper">
+                    {
+                        section_object.map(v => {
+                            return (
+                                <div className="card" key={v.id}>
+                                    <div className="title">
+                                        <img className='title_r' src={require('../../../assets/homepage/r.png')} alt="img" />
+                                        <img className='title_s' src={require('../../../assets/homepage/s.png')} alt="img" />
+                                        <span className="content">
+                                            {v.title}
+                                        </span>
+                                    </div>
+                                    <div className="body">
+                                        {v.list}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+
+                </div>
+            </div>
+        </section>
     )
 }
