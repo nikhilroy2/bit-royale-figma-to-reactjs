@@ -215,7 +215,7 @@ const Section5 = () => {
         {
             id: 1,
             title: 'Heroes',
-            img: require('../../../assets/homepage/heroes.png'),
+            img: require('../../../assets/homepage/heroes.gif'),
             description: `Each hero comes from a CHEST, and they can come in different classes with a different level of Attack and Health:`,
             footer_list: <ul>
                 <li style={{ '--color': 'rgba(167, 167, 167, 1)' }}>
@@ -238,7 +238,7 @@ const Section5 = () => {
         {
             id: 2,
             title: 'Trainers ',
-            img: require('../../../assets/homepage/trainers.png'),
+            img: require('../../../assets/homepage/trainers.gif'),
             description: `Trainers also come inside CHESTS and are divided into 3 classes, each reducing a portion of a hero’s recovering time:`,
             footer_list: <ul>
                 <li style={{ '--color': 'rgba(167, 167, 167, 1)' }}>
@@ -286,7 +286,7 @@ const Section5 = () => {
                             return (
                                 <div key={v.id} className="nft_card">
                                     <div className="card_title">
-                                        <img src={v.img} alt="" />
+                                        <img src={v.img} alt="img" />
                                         <h3>
                                             {v.title}
                                         </h3>
@@ -307,7 +307,7 @@ const Section5 = () => {
                 </div>
 
 
-                <div className="btn_wrapper">
+                <div className="btn_wrapper" >
                     <button className="btn_nft">
                         <img src={require('../../../assets/homepage/buy_nft.png')} alt="img" />
                         <span>
@@ -317,6 +317,116 @@ const Section5 = () => {
                 </div>
             </div>
 
+            <div className="section_body_slider">
+                <SliderCard></SliderCard>
+                <div className="slider_control">
+                    <button className="control_btn" style={{left: '50%'}}>
+                        <img src={require('../../../assets/slider/slider_control.png')} alt="img" />
+                    </button>
+                </div>
+            </div>
         </section>
+    )
+}
+
+const SliderCard = () => {
+    const card_object = {
+        row1: [
+            {
+                id: 1,
+                img: require('../../../assets/slider/card1.gif'),
+                name: 'Knight'
+            },
+            {
+                id: 2,
+                img: require('../../../assets/slider/card2.gif'),
+                name: 'Ninja'
+            },
+            {
+                id: 3,
+                img: require('../../../assets/slider/card3.gif'),
+                name: 'OGRE'
+            },
+            {
+                id: 4,
+                img: require('../../../assets/slider/card4.gif'),
+                name: 'PIRATE'
+            },
+            {
+                id: 5,
+                img: require('../../../assets/slider/card5.gif'),
+                name: 'Indian'
+            },
+        ],
+        row2: [
+            {
+                id: 1,
+                img: require('../../../assets/slider/card6.gif'),
+                name: 'witch'
+            },
+            {
+                id: 2,
+                img: require('../../../assets/slider/card7.gif'),
+                name: 'HUNTER'
+            },
+            {
+                id: 3,
+                img: require('../../../assets/slider/card8.gif'),
+                name: 'ROBOT'
+            },
+            {
+                id: 4,
+                img: require('../../../assets/slider/card9.gif'),
+                name: 'Fairy'
+            },
+            {
+                id: 5,
+                img: require('../../../assets/slider/card10.gif'),
+                name: 'Lella'
+            },
+        ]
+    }
+    return (
+        <div id="sliderCard">
+            <div className="card_wrapper">
+                {
+                    card_object.row1.map(v => {
+                        return (
+                            <div className="card" key={v.id}>
+                                <div className="title">
+                                    <img src={v.img} alt="" />
+                                </div>
+                                <div className="body">
+                                    <button className="card_btn">
+                                        <img src={require('../../../assets/homepage/btn_bg.png')} alt="img" />
+                                        <span>{v.name}</span>
+                                    </button>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+
+            <div className="card_wrapper">
+                {
+                    card_object.row2.map(v => {
+                        return (
+                            <div className="card" key={v.id}>
+                                <div className="title">
+                                    <img src={v.img} alt="" />
+                                </div>
+                                <div className="body">
+                                    <button className="card_btn">
+                                        <img src={require('../../../assets/homepage/btn_bg.png')} alt="img" />
+                                        <span>{v.name}</span>
+                                    </button>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </div>
     )
 }
