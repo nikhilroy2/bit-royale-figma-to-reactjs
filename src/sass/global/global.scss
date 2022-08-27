@@ -34,15 +34,17 @@ button {
   text-align: center;
   position: relative;
   img {
-    @media (max-width: 1500px) {
-      margin-top: 0px;
-      width: calc(100% - 200px);
-      display: block;
-      margin: auto;
-      max-height: 150px;
-    }
-    @media (max-width: 600px) {
-      width: 95%;
+    &:not(.not_responsive) {
+      @media (max-width: 1500px) {
+        margin-top: 0px;
+        width: calc(100% - 200px);
+        display: block;
+        margin: auto;
+        max-height: 150px;
+      }
+      @media (max-width: 600px) {
+        width: 95%;
+      }
     }
   }
   span {
@@ -58,8 +60,10 @@ button {
     line-height: 51px;
     display: block;
     margin-top: 1rem;
-    @media (max-width: 800px) {
-      font-size: 2.5rem;
+    &:not(.not_responsive) {
+      @media (max-width: 800px) {
+        font-size: 2.5rem;
+      }
     }
   }
 }

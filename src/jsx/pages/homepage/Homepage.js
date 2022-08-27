@@ -131,11 +131,11 @@ const Section3 = () => {
                 </div>
             </div>
             <div className="how_to_earn_wrapper">
-                <div className="section_global_title">
-                    <img className='chest_img' src={require('../../../assets/homepage/chest.png')} alt="img" />
-                    <div className="content">
-                        <img src={require('../../../assets/homepage/t.png')} alt="img" />
-                        <span>HOW TO <br /> EARN?
+                <div className="section_global_title ">
+                    <img className='chest_img ' src={require('../../../assets/homepage/chest.png')} alt="img" />
+                    <div className="content ">
+                        <img className='not_responsive' src={require('../../../assets/homepage/t.png')} alt="img" />
+                        <span className='not_responsive'>HOW TO <br /> EARN?
                         </span>
                     </div>
                 </div>
