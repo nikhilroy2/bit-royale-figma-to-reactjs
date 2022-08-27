@@ -2,6 +2,8 @@
   height: 242px;
   width: 100%;
   background: url("../../assets/layout/header/header_bg.png") no-repeat;
+  z-index: 2;
+  position: relative;
 }
 
 #Header .header_list {
@@ -17,13 +19,34 @@
   height: 100%;
 }
 
+@media (min-width: 1187px) {
+  #Header .header_list {
+    padding-left: 88px;
+  }
+}
+
+#Header .header_list li {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 63px;
+}
+
 #Header .header_list a {
   padding: 15px;
   display: inline-block;
   font-size: 3.2rem;
+  text-shadow: 4px 4px 1px #10314f;
+  white-space: nowrap;
+}
+
+#Header .header_list .logo_list {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 0px;
 }
 
 #Header .header_list .logo_action {
-  padding-top: 8.5rem;
+  padding-top: 5rem;
 }
 /*# sourceMappingURL=header.css.map */

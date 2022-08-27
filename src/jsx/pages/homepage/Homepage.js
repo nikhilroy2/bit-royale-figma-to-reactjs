@@ -27,10 +27,12 @@ const Section1 = () => {
             earn rewards and save the Bit Royale Kingdom!
         </p>
 
-        <button className="btn_know">
-            <img src={require('../../../assets/homepage/know_more.png')}
-                alt="img" />
-        </button>
+        <div className="btn_wrapper">
+            <button className="btn_know">
+                <img src={require('../../../assets/homepage/know_more.png')}
+                    alt="img" />
+            </button>
+        </div>
     </section>
 }
 
@@ -566,40 +568,39 @@ const Section6 = () => {
         </section>
     )
 }
-
 const Section7 = () => {
     const section_object = [
         {
             id: 1,
-            img: '',
+            img: require('../../../assets/homepage/team/team1.png'),
             title: 'Rafaela Nunes',
             role: 'FOUNDER',
             description: `Graduated from UNIFOR-MG and cryptocurrency enthusiast since 2017, Rafaela is the creator and founder of Bit Comp, idealizing to create an innovative and audacious project.`,
         },
         {
             id: 2,
-            img: '',
+            img: require('../../../assets/homepage/team/team2.png'),
             title: 'Jaime Caetano',
             role: 'CEO',
             description: `Graduated in Production Engineering from UNIFOR-MG, with experience in the financial and crypto markets since 2016, Jaime is the CEO and responsible for the administration of the project.`,
         },
         {
             id: 3,
-            img: '',
+            img: require('../../../assets/homepage/team/team3.png'),
             title: 'Dmitry Eremenko',
             role: 'CBD',
             description: `An expert in solidity and blockchain, Dmitry is responsible for Web3 development and project backend.`,
         },
         {
             id: 4,
-            img: '',
+            img: require('../../../assets/homepage/team/team4.png'),
             title: 'João Pedro',
             role: 'Visual Artist',
             description: `Specialist in illustrations and 2D arts, João is the graphic artist of much of the project.`,
         },
         {
             id: 5,
-            img: '',
+            img: require('../../../assets/homepage/team/team5.png'),
             title: 'Lorena Mota',
             role: 'PIXELART ARTIST',
             description: `Lorena is responsible for creating the design of all characters (NFTs) in the project.`,
@@ -617,7 +618,9 @@ const Section7 = () => {
                         section_object.map(v => {
                             return (
                                 <div className="card" key={v.id}>
-                                    <div className="title"></div>
+                                    <div className="title">
+                                        <img src={v.img} alt="img" />
+                                    </div>
                                     <div className="body">
                                         <h3>
                                             {v.title}
@@ -631,10 +634,7 @@ const Section7 = () => {
                             )
                         })
                     }
-
                 </div>
-
-
             </div>
             <div className="section_footer">
                 <img src={require('../../../assets/homepage/welcome.png')} alt="img" />
@@ -654,8 +654,6 @@ const Section7 = () => {
         </section>
     )
 }
-
-
 const SocialList = () => {
     const list_object = [
         {

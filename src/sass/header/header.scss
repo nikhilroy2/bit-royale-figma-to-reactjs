@@ -1,20 +1,34 @@
 #Header {
   height: 242px;
   width: 100%;
-  background: url("../../assets/layout/header/header_bg.png") 
-    no-repeat;
+  background: url("../../assets/layout/header/header_bg.png") no-repeat;
+  z-index: 2;
+  position: relative;
   .header_list {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    @media (min-width: 1187px) {
+      padding-left: 88px;
+    }
+    li {
+      align-self: flex-start;
+      margin-top: 63px;
+    }
     a {
       padding: 15px;
       display: inline-block;
       font-size: 3.2rem;
+      text-shadow: 4px 4px 1px #10314f;
+      white-space: nowrap;
+    }
+    .logo_list {
+      align-self: center;
+      margin-top: 0px;
     }
     .logo_action {
-      padding-top: 8.5rem;
+      padding-top: 5rem;
     }
   }
 }

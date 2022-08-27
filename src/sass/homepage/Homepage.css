@@ -1,13 +1,18 @@
+#Homepage {
+  margin-top: -8rem;
+}
+
 #Homepage #Section1 {
   min-height: 1204px;
-  background: url("../../assets/homepage/section1_bg.png") center/100% 100% no-repeat;
+  background: url("../../assets/homepage/section1_bg.png") center/cover no-repeat;
   margin-top: -2rem;
   text-align: center;
 }
 
 #Homepage #Section1 .circle_img {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 60px;
 }
 
 #Homepage #Section1 p {
@@ -15,6 +20,7 @@
   max-width: 777px;
   margin: auto;
   min-height: 128px;
+  text-shadow: 4px 4px 1px #10314f;
 }
 
 #Homepage #Section1 .btn_know {
@@ -666,9 +672,8 @@
 #Homepage #Section7 .section_body .team_card_wrapper .card .title {
   width: 329px;
   height: 203px;
-  background: #d9d9d9;
   border-radius: 37px;
-  margin-bottom: 2rem;
+  text-align: center;
 }
 
 #Homepage #Section7 .section_body .team_card_wrapper .card .body {

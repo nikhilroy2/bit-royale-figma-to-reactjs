@@ -1,36 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { ResolutionContext } from '../../App';
 import '../../sass/header/header.css'
 function Header(props) {
+    const isDesktop = useContext(ResolutionContext);
     return (
-        <header id="Header">
-            <ul className="header_list">
-                <li>
-                    <a href="#">
-                        NFT's
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Gameplay
-                    </a>
-                </li>
-               
-                <li>
-                    <a href="#" className='logo_action'>
-                        <img src={require('../../assets/icons/BitRoyaleWhite.png')} alt="logo" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Roadmap
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        How to Earth
-                    </a>
-                </li>
-            </ul>
+
+        <header id={isDesktop ? 'Header' : 'mobile_header'}>
+
+            {
+                isDesktop ? <ul className="header_list">
+                    <li>
+                        <a href="#">
+                            NFT's
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Gameplay
+                        </a>
+                    </li>
+
+                    <li className='logo_list'>
+                        <a href="#" className='logo_action'>
+                            <img src={require('../../assets/icons/BitRoyaleWhite.png')} alt="logo" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Roadmap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            How to Earth
+                        </a>
+                    </li>
+                </ul> : <div className="mobile_header_list">
+
+                </div>
+            }
         </header>
     );
 }
