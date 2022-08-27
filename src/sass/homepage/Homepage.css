@@ -3,16 +3,147 @@
 }
 
 #Homepage #Section1 {
+  position: relative;
+  overflow: hidden;
   min-height: 1204px;
-  background: url("../../assets/homepage/section1_bg.png") center/cover no-repeat;
   margin-top: -2rem;
   text-align: center;
+}
+
+#Homepage #Section1 .bg_jogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+}
+
+@media (max-width: 1500px) {
+  #Homepage #Section1 .bg_jogo {
+    height: 100%;
+  }
+}
+
+#Homepage #Section1 .bg_jogo.animated_bg {
+  -webkit-animation: 5s linear infinite jogo alternate;
+          animation: 5s linear infinite jogo alternate;
+}
+
+@-webkit-keyframes jogo {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes jogo {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+#Homepage #Section1 .char_bg {
+  position: absolute;
+  left: -0.5%;
+  bottom: 10%;
+  -webkit-animation: 3s linear infinite char_bg alternate;
+          animation: 3s linear infinite char_bg alternate;
+}
+
+@-webkit-keyframes char_bg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}
+
+@keyframes char_bg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}
+
+#Homepage #Section1 .char_right_bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-animation: 3s linear infinite right_bg alternate;
+          animation: 3s linear infinite right_bg alternate;
+}
+
+@-webkit-keyframes right_bg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}
+
+@keyframes right_bg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+}
+
+#Homepage #Section1 .bg_bottom_layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  -webkit-animation: 3s linear infinite layer alternate;
+          animation: 3s linear infinite layer alternate;
+}
+
+@-webkit-keyframes layer {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes layer {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 #Homepage #Section1 .circle_img {
   display: inline-block;
   margin-top: 100px;
   margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+#Homepage #Section1 .section_content {
+  position: relative;
+  z-index: 2;
 }
 
 #Homepage #Section1 p {

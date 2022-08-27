@@ -1,15 +1,87 @@
 #Homepage {
   margin-top: -8rem;
   #Section1 {
+    position: relative;
+    overflow: hidden;
     min-height: 1204px;
-    background: url("../../assets/homepage/section1_bg.png") center/cover
-      no-repeat;
+    // background: url("../../assets/homepage/section1_bg.png") center/cover
+    //   no-repeat;
     margin-top: -2rem;
     text-align: center;
+    // drawing bg
+    .bg_jogo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 110%;
+      @media (max-width: 1500px){
+        height: 100%;
+      }
+      &.animated_bg {
+        animation: 5s linear infinite jogo alternate;
+        @keyframes jogo {
+          0% {
+            left: -10%;
+          }
+          100% {
+            left: 0%;
+          }
+        }
+      }
+    }
+    .char_bg {
+      position: absolute;
+      left: -0.5%;
+      bottom: 10%;
+      animation: 3s linear infinite char_bg alternate;
+      @keyframes char_bg {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(3deg);
+        }
+      }
+    }
+    .char_right_bg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      animation: 3s linear infinite right_bg alternate;
+      @keyframes right_bg {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(3deg);
+        }
+      }
+    }
+    .bg_bottom_layer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 110%;
+      animation: 3s linear infinite layer alternate;
+      @keyframes layer {
+        0% {
+          left: -10%;
+        }
+        100% {
+          left: 0%;
+        }
+      }
+    }
     .circle_img {
       display: inline-block;
       margin-top: 100px;
       margin-bottom: 60px;
+      position: relative;
+      z-index: 2;
+    }
+    .section_content {
+      position: relative;
+      z-index: 2;
     }
     p {
       font-size: 3.2rem;

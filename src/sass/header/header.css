@@ -49,4 +49,41 @@
 #Header .header_list .logo_action {
   padding-top: 5rem;
 }
+
+#Header .header_list .logo_action.logo_animated img {
+  -webkit-animation: 1s ease-in-out logo forwards;
+          animation: 1s ease-in-out logo forwards;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
 /*# sourceMappingURL=header.css.map */

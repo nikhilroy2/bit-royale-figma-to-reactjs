@@ -18,20 +18,26 @@ export default Homepage;
 
 const Section1 = () => {
     return <section id="Section1">
+        <img src={require('../../../assets/homepage/bg_jogo.png')} alt="" className="bg_jogo animated_bg" />
+        <img src={require('../../../assets/homepage/bg_bottom_layer.png')} className="bg_bottom_layer" alt="" />
         <img className='circle_img' src={require('../../../assets/homepage/BitRoyaleWhiteSection.png')} alt="" />
-        <div>
-            <img src={require('../../../assets/homepage/battle.png')} alt="img" />
-        </div>
-        <p>
-            Be strategic, assemble your Heroes, collect NFTs,
-            earn rewards and save the Bit Royale Kingdom!
-        </p>
+        <img src={require('../../../assets/homepage/char_bg.png')} alt="img" className="char_bg" />
+        <img src={require('../../../assets/homepage/char_right_bg.png')} alt="img" className="char_right_bg" />
+        <div className="section_content">
+            <div>
+                <img src={require('../../../assets/homepage/battle.png')} alt="img" />
+            </div>
+            <p>
+                Be strategic, assemble your Heroes, collect NFTs,
+                earn rewards and save the Bit Royale Kingdom!
+            </p>
 
-        <div className="btn_wrapper">
-            <button className="btn_know">
-                <img src={require('../../../assets/homepage/know_more.png')}
-                    alt="img" />
-            </button>
+            <div className="btn_wrapper">
+                <button className="btn_know">
+                    <img src={require('../../../assets/homepage/know_more.png')}
+                        alt="img" />
+                </button>
+            </div>
         </div>
     </section>
 }
