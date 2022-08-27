@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import '../../../sass/homepage/Homepage.css'
+import { ResolutionContext } from '../../../App';
 function Homepage(props) {
     return (
         <div id='Homepage'>
@@ -25,7 +26,7 @@ const Section1 = () => {
         <img src={require('../../../assets/homepage/char_right_bg.png')} alt="img" className="char_right_bg" />
         <div className="section_content">
             <div>
-                <img src={require('../../../assets/homepage/battle.png')} alt="img" />
+                <img className='battle_bg' src={require('../../../assets/homepage/battle.png')} alt="img" />
             </div>
             <p>
                 Be strategic, assemble your Heroes, collect NFTs,
@@ -43,6 +44,7 @@ const Section1 = () => {
 }
 
 const Section2 = () => {
+    const [isPlay, setIsPlay] = useState(false);
     return (
         <section id='Section2'>
             <div className="section_title">
@@ -50,10 +52,18 @@ const Section2 = () => {
             </div>
             <div className="section_body">
                 <div className="video_frame">
+                    <img className='frame_postar' src={require('../../../assets/homepage/video_frame.png')} alt="" />
+                    {
+                        !isPlay && (
+                            <>
+                                <button className="video_btn" onClick={() => setIsPlay(true)}>
+                                    <img src={require('../../../assets/homepage/video_btn.png')} alt="" />
+                                </button>
+                            </>
+                        )
+                    }
                     <iframe
-                        width={560}
-                        height={315}
-                        src="https://www.youtube.com/embed/p3z-VAwRTtM"
+                        src={`https://www.youtube.com/embed/p3z-VAwRTtM${isPlay ? '?autoplay=1' : ''}`}
                         title="YouTube video player"
                         frameBorder={0}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

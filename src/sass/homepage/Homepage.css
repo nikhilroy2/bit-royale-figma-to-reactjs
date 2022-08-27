@@ -5,9 +5,15 @@
 #Homepage #Section1 {
   position: relative;
   overflow: hidden;
-  min-height: 1204px;
+  min-height: 1000px;
   margin-top: -2rem;
   text-align: center;
+}
+
+@media (min-width: 800px) {
+  #Homepage #Section1 {
+    min-height: 1304px;
+  }
 }
 
 #Homepage #Section1 .bg_jogo {
@@ -76,6 +82,18 @@
   }
 }
 
+@media (max-width: 1200px) {
+  #Homepage #Section1 .char_bg {
+    height: 612px;
+  }
+}
+
+@media (max-width: 800px) {
+  #Homepage #Section1 .char_bg {
+    height: 70vw;
+  }
+}
+
 #Homepage #Section1 .char_right_bg {
   position: absolute;
   right: 0;
@@ -103,6 +121,20 @@
   100% {
     -webkit-transform: rotate(3deg);
             transform: rotate(3deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  #Homepage #Section1 .char_right_bg {
+    height: 870px;
+    bottom: 0px;
+    top: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  #Homepage #Section1 .char_right_bg {
+    height: 80vw;
   }
 }
 
@@ -141,9 +173,21 @@
   z-index: 2;
 }
 
+@media (max-width: 800px) {
+  #Homepage #Section1 .circle_img {
+    height: 40vw;
+  }
+}
+
 #Homepage #Section1 .section_content {
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 800px) {
+  #Homepage #Section1 .section_content .battle_bg {
+    height: 10vw;
+  }
 }
 
 #Homepage #Section1 p {
@@ -152,6 +196,12 @@
   margin: auto;
   min-height: 128px;
   text-shadow: 4px 4px 1px #10314f;
+}
+
+@media (max-width: 800px) {
+  #Homepage #Section1 p {
+    font-size: 4vw;
+  }
 }
 
 #Homepage #Section1 .btn_know {
@@ -163,6 +213,17 @@
   cursor: pointer;
 }
 
+@media (max-width: 800px) {
+  #Homepage #Section1 .btn_know {
+    width: auto;
+    height: 12vw;
+  }
+  #Homepage #Section1 .btn_know img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 #Homepage #Section2 {
   margin-top: -16rem;
   background: url("../../assets/homepage/ArtWeb.png") center/100% 100% no-repeat;
@@ -171,8 +232,16 @@
   z-index: 2;
 }
 
+@media (max-width: 1500px) {
+  #Homepage #Section2 {
+    padding-top: 50px;
+    background-size: cover;
+  }
+}
+
 #Homepage #Section2 .section_title {
   text-align: center;
+  padding-bottom: 50px;
 }
 
 #Homepage #Section2 .section_title img {
@@ -180,11 +249,72 @@
   margin-bottom: 2rem;
 }
 
+@media (max-width: 1500px) {
+  #Homepage #Section2 .section_title img {
+    margin-top: 0px;
+    width: calc(100% - 200px);
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #Homepage #Section2 .section_title img {
+    width: 95%;
+  }
+}
+
+#Homepage #Section2 .section_body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#Homepage #Section2 .section_body .video_frame {
+  position: relative;
+  width: 901px;
+  height: 544px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1000px) {
+  #Homepage #Section2 .section_body .video_frame {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+#Homepage #Section2 .section_body .video_frame .frame_postar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#Homepage #Section2 .section_body .video_frame .video_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 #Homepage #Section2 .section_body .video_frame iframe {
   display: block;
   margin: auto;
-  min-width: 1003px;
-  height: 606px;
+  width: 88%;
+  height: 85%;
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
 }
 
 #Homepage #Section2 .section_body .content_wrapper {
@@ -211,6 +341,13 @@
   padding-bottom: 28px;
 }
 
+@media (max-width: 800px) {
+  #Homepage #Section3 .section_body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 #Homepage #Section3 .section_body .paragraph {
   max-width: 925px;
   margin: auto;
@@ -223,6 +360,12 @@
 
 #Homepage #Section3 .section_body .buyback_wrapper {
   margin-bottom: 43px;
+}
+
+@media (max-width: 800px) {
+  #Homepage #Section3 .section_body .buyback_wrapper img {
+    width: 100%;
+  }
 }
 
 #Homepage #Section3 .section_body .content_1_wrapper {

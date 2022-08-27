@@ -12,7 +12,7 @@ function App() {
   const [isDesktop, setIsDesktop] = useState(true);
   window.addEventListener('resize', () => {
     Resolution()
-    console.log('scrolling')
+    //console.log('scrolling')
   })
   useEffect(() => {
     Resolution();
