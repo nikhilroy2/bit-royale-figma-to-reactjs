@@ -254,6 +254,13 @@
       }
       .bcomp_wrapper {
         max-width: 734px;
+        @media (max-width: 800px) {
+          max-width: 100%;
+          .title,
+          img {
+            width: 100%;
+          }
+        }
         .title {
           position: relative;
         }
@@ -276,6 +283,11 @@
           border: none;
           outline: none;
           margin-top: -6rem;
+          @media (max-width: 800px) {
+            img {
+              width: 70%;
+            }
+          }
         }
       }
       .how_to_earn_wrapper {
@@ -285,6 +297,12 @@
           position: relative;
           max-width: 375px;
           margin: auto;
+          @media (max-width: 800px) {
+            transform: scale(0.8);
+            * {
+              width: 100%;
+            }
+          }
         }
         .chest_img {
           position: absolute;
@@ -306,6 +324,8 @@
         padding-right: 3rem;
         @media (max-width: 1080px) {
           flex-flow: row wrap;
+          padding-left: 0px;
+          padding-right: 0px;
         }
         .content {
           max-width: 734px;
@@ -314,6 +334,9 @@
           border-radius: 29px;
           position: relative;
           transition: 1s;
+          @media (max-width: 800px) {
+            max-width: 100%;
+          }
           &:hover {
             transform: scale(1.1);
           }
@@ -334,6 +357,9 @@
             text-shadow: 5px 5px #ffffff, -5px -5px #ffffff, -5px 5px #ffffff,
               5px -5px #ffffff;
             align-items: center;
+            @media (max-width: 800px) {
+              font-size: 30px;
+            }
             span {
               padding-left: 16px;
               padding-right: 16px;
@@ -352,6 +378,9 @@
               text-align: center;
               color: #ffffff;
               margin: 0;
+              @media (max-width: 800px) {
+                font-size: 1.6rem;
+              }
             }
           }
         }
@@ -363,6 +392,11 @@
       100% no-repeat;
     position: relative;
     z-index: 2;
+    .btn_bit_royale {
+      img {
+        width: 100%;
+      }
+    }
     .paragraph {
       font-size: 2.1rem;
       line-height: 26px;
@@ -376,13 +410,34 @@
       display: flex;
       justify-content: center;
       padding-bottom: 73px;
+      @media (max-width: 800px) {
+        flex-wrap: wrap;
+      }
       .card {
         max-width: 583px;
         height: 398px;
         position: relative;
         transition: 1s;
-        &:hover{
+        &:hover {
           transform: scale(1.1);
+        }
+        @media (max-width: 1400px) {
+          transform: scale(0.8);
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+        @media (max-width: 1000px) {
+          transform: scale(0.7);
+          &:hover {
+            transform: scale(0.8);
+          }
+        }
+        @media (max-width: 800px) {
+          transform: scale(0.8);
+          &:hover {
+            transform: scale(0.9);
+          }
         }
         .card_content {
           max-width: 277px;
@@ -405,6 +460,9 @@
         }
         &:first-child {
           margin-right: 97px;
+          @media (max-width: 1400px) {
+            margin-right: 0px;
+          }
           .card_content {
             right: 41px;
             bottom: 12px;
@@ -446,6 +504,11 @@
       justify-content: center;
       align-items: flex-start;
       padding-top: 4rem;
+      @media (max-width: 800px) {
+        img {
+          transform: scale(0.8);
+        }
+      }
       span {
         margin-top: -2rem;
       }
@@ -460,6 +523,11 @@
         justify-content: center;
         padding-top: 5.1rem;
         padding-bottom: 9.2rem;
+        @media (max-width: 600px) {
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-bottom: 5.2rem;
+        }
         .nft_card {
           max-width: 456px;
           padding: 1rem 1.6rem 1rem 2.8rem;
@@ -471,6 +539,14 @@
           flex-direction: column;
           justify-content: flex-end;
           margin-right: 97px;
+          margin-bottom: 3rem;
+          @media (max-width: 1000px) {
+            margin-right: 0px;
+          }
+          @media (max-width: 600px) {
+            width: 100%;
+            max-width: 100%;
+          }
           &:first-child {
             .card_title {
             }
@@ -605,16 +681,26 @@
       position: absolute;
       bottom: -27%;
       right: 0;
+      @media (max-width: 1500px) {
+        height: 50vw;
+      }
     }
     .roadmap_draw2 {
       position: absolute;
       bottom: -16%;
       left: -19%;
+      @media (max-width: 1500px) {
+        height: 50vw;
+      }
     }
     .section_title {
       text-align: center;
       padding-top: 236px;
       margin-bottom: 67px;
+      @media (max-width: 800px) {
+        padding-top: 50px;
+        margin-bottom: 2rem;
+      }
     }
     .roadmap_card_wrapper {
       display: flex;
@@ -625,10 +711,18 @@
       .card {
         width: 368px;
         margin-bottom: 46px;
-        &:nth-child(odd) {
-          margin-right: 204px;
+        @media (min-width: 1000px) {
+          &:nth-child(odd) {
+            margin-right: 204px;
+          }
+          &:last-child {
+            margin-right: 0px;
+          }
         }
-        &:last-child {
+        @media (max-width: 999px) {
+          margin-right: 50px;
+        }
+        @media (max-width: 750px) {
           margin-right: 0px;
         }
         .title {
@@ -686,6 +780,9 @@
   }
   #Section7 {
     padding-top: 300px;
+    @media (max-width: 800px) {
+      padding-top: 10rem;
+    }
     position: relative;
     &::after {
       content: "";
@@ -724,6 +821,9 @@
         margin: auto;
         margin-top: 4.7rem;
         max-width: 1200px;
+        @media (max-width: 600px) {
+          padding: 0px 2rem;
+        }
         .card {
           max-width: 368px;
           background: #6b84c1;
@@ -731,15 +831,32 @@
           padding: 2rem;
           margin-bottom: 7rem;
           margin-right: 4.7rem;
-          &:last-child,
-          &:nth-child(3) {
+          @media (max-width: 600px) {
             margin-right: 0px;
+            max-width: 100%;
+            margin-bottom: 2rem;
           }
+          @media (min-width: 1300px) {
+            &:last-child,
+            &:nth-child(3) {
+              margin-right: 0px;
+            }
+          }
+
           .title {
             width: 329px;
             height: 203px;
             border-radius: 37px;
             text-align: center;
+            margin: auto;
+            @media (max-width: 600px) {
+              width: 100%;
+              height: auto;
+              margin-bottom: 1rem;
+              img {
+                height: 150px;
+              }
+            }
           }
           .body {
             text-align: center;
@@ -786,6 +903,12 @@
         li {
           margin-right: 3.5rem;
           margin-bottom: 2rem;
+          @media (max-width: 600px) {
+            margin-right: 1rem;
+            img {
+              height: 40px;
+            }
+          }
           &:last-child {
             margin-right: 0px;
           }

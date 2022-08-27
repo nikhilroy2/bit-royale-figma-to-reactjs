@@ -41,6 +41,7 @@ button {
         display: block;
         margin: auto;
         max-height: 150px;
+        object-fit: contain;
       }
       @media (max-width: 600px) {
         width: 95%;
@@ -90,6 +91,11 @@ button {
 
 .btn_nft {
   position: relative;
+  @media (max-width: 800px) {
+    img {
+      width: 100%;
+    }
+  }
   span {
     position: absolute;
     top: 50%;
@@ -100,5 +106,8 @@ button {
     text-align: center;
     color: #ffffff;
     text-shadow: 4px 4px 1px #2e1b79;
+    @media (max-width: 800px) {
+      font-size: 3rem;
+    }
   }
 }

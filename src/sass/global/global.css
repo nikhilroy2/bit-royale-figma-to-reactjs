@@ -50,6 +50,8 @@ button {
     display: block;
     margin: auto;
     max-height: 150px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -109,6 +111,12 @@ button {
   position: relative;
 }
 
+@media (max-width: 800px) {
+  .btn_nft img {
+    width: 100%;
+  }
+}
+
 .btn_nft span {
   position: absolute;
   top: 50%;
@@ -120,5 +128,11 @@ button {
   text-align: center;
   color: #ffffff;
   text-shadow: 4px 4px 1px #2e1b79;
+}
+
+@media (max-width: 800px) {
+  .btn_nft span {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=global.css.map */

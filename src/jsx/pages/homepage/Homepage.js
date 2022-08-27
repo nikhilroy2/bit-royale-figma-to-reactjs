@@ -223,7 +223,7 @@ const Section4 = () => {
             </div>
 
             <div className="footer" >
-                <button>
+                <button className='btn_bit_royale'>
                     <img src={require('../../../assets/homepage/more_bit_royale.png')} alt="img" />
                 </button>
             </div>
@@ -295,8 +295,8 @@ const Section5 = () => {
     ]
     return (
         <section id="Section5">
-            <div className="section_title section_global_title">
-                <img src={require('../../../assets/homepage/t.png')} alt="img" />
+            <div className="section_title section_global_title ">
+                <img className='not_responsive' src={require('../../../assets/homepage/t.png')} alt="img" />
                 <span>NFTs</span>
             </div>
             <div className="section_body">
@@ -555,7 +555,7 @@ const Section6 = () => {
         <section id="Section6">
             <img src={require('../../../assets/homepage/roadmap_draw1.png')} alt="" className="roadmap_draw1" />
             <img src={require('../../../assets/homepage/roadmap_draw2.png')} alt="" className="roadmap_draw2" />
-            <div className="section_title">
+            <div className="section_title section_global_title">
                 <img src={require('../../../assets/homepage/roadmap_title.png')} alt="img" />
             </div>
             <div className="section_body">
@@ -653,7 +653,9 @@ const Section7 = () => {
                 </div>
             </div>
             <div className="section_footer">
-                <img src={require('../../../assets/homepage/welcome.png')} alt="img" />
+                <div className="section_global_title">
+                    <img className='' src={require('../../../assets/homepage/welcome.png')} alt="img" />
+                </div>
                 <p>
                     Welcome my royal friend!
                     <br /><br />
