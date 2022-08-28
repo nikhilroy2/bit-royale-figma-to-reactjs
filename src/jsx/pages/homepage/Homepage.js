@@ -1,6 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useRef, useEffect } from 'react';
 import '../../../sass/homepage/Homepage.css'
 import { ResolutionContext } from '../../../App';
+import { gsap } from "gsap";
+
 function Homepage(props) {
     return (
         <div id='Homepage'>
@@ -18,8 +20,13 @@ function Homepage(props) {
 export default Homepage;
 
 const Section1 = () => {
+
     return <section id="Section1">
-        <img src={require('../../../assets/homepage/bg_jogo.png')} alt="" className="bg_jogo animated_bg" />
+        {useContext(ResolutionContext) ? <img src={require('../../../assets/homepage/bg_jogo.png')} alt="" className="bg_jogo animated_bg" /> :
+            <img src={require('../../../assets/homepage/jogo_mobile.png')} alt="" className="bg_jogo animated_bg" />
+        }
+
+
         <img src={require('../../../assets/homepage/bg_bottom_layer.png')} className="bg_bottom_layer" alt="" />
         <img className='circle_img' src={require('../../../assets/homepage/BitRoyaleWhiteSection.png')} alt="" />
         <img src={require('../../../assets/homepage/char_bg.png')} alt="img" className="char_bg" />
@@ -91,6 +98,15 @@ const Section2 = () => {
 
 const Section3 = () => {
     return <section id="Section3">
+        <div className="coin_draw" >
+            <img src={require('../../../assets/homepage/coin1.png')} alt="img" className="draw_coin1" />
+            <img src={require('../../../assets/homepage/coin2.png')} alt="img" className="draw_coin2" />
+            <img src={require('../../../assets/homepage/coin3.png')} alt="img" className="draw_coin3" />
+            <img src={require('../../../assets/homepage/coin4.png')} alt="img" className="draw_coin4" />
+            <img src={require('../../../assets/homepage/coin5.png')} alt="img" className="draw_coin5" />
+            <img src={require('../../../assets/homepage/coin6.png')} alt="img" className="draw_coin6" />
+            <img src={require('../../../assets/homepage/coin7.png')} alt="img" className="draw_coin7" />
+        </div>
         <div className="section_title section_global_title">
             <img src={require('../../../assets/homepage/t.png')} alt="img" />
             <span>TOKENOMICS</span>

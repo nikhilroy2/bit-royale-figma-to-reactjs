@@ -2,8 +2,10 @@
   height: 242px;
   width: 100%;
   background: url("../../assets/layout/header/header_bg.png") no-repeat;
-  z-index: 2;
-  position: relative;
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  left: 0;
   .header_list {
     display: flex;
     justify-content: center;

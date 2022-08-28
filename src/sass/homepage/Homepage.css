@@ -5,9 +5,15 @@
 #Homepage #Section1 {
   position: relative;
   overflow: hidden;
-  min-height: 1000px;
+  min-height: 1200px;
   margin-top: -2rem;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  #Homepage #Section1 {
+    min-height: 900px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -21,6 +27,8 @@
   top: 0;
   left: 0;
   width: 110%;
+  -o-object-position: 0px -100px;
+     object-position: 0px -100px;
 }
 
 @media (max-width: 1500px) {
@@ -167,10 +175,16 @@
 
 #Homepage #Section1 .circle_img {
   display: inline-block;
-  margin-top: 100px;
-  margin-bottom: 60px;
+  margin-top: 70px;
+  margin-bottom: 2rem;
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 1080px) {
+  #Homepage #Section1 .circle_img {
+    margin-top: 20rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -331,14 +345,110 @@
 }
 
 #Homepage #Section3 {
-  background: url("../../assets/homepage/section_3bg.png") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2570b4), to(#a5d2f5));
+  background: linear-gradient(180deg, #2570b4 0%, #a5d2f5 100%);
   margin-top: -11rem;
+  overflow: hidden;
   padding-top: 13rem;
+  position: relative;
+}
+
+#Homepage #Section3 [class*="draw_coin"] {
+  position: absolute;
+  -webkit-animation: 1s linear infinite coin alternate;
+          animation: 1s linear infinite coin alternate;
+}
+
+@-webkit-keyframes coin {
+  0% {
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+  }
+  100% {
+    -webkit-transform: translate(30px, 30px);
+            transform: translate(30px, 30px);
+  }
+}
+
+@keyframes coin {
+  0% {
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+  }
+  100% {
+    -webkit-transform: translate(30px, 30px);
+            transform: translate(30px, 30px);
+  }
+}
+
+#Homepage #Section3 [class*="draw_coin"].draw_coin1 {
+  left: 8vw;
+  margin-top: 2vw;
+  -webkit-animation-timing-function: 0.2s;
+          animation-timing-function: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+#Homepage #Section3 [class*="draw_coin"].draw_coin2 {
+  left: 11vw;
+  margin-top: 11vw;
+  -webkit-animation-timing-function: 0.4s;
+          animation-timing-function: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+#Homepage #Section3 [class*="draw_coin"].draw_coin3 {
+  right: 10vw;
+  top: 20%;
+  -webkit-animation-timing-function: 0.6s;
+          animation-timing-function: 0.6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#Homepage #Section3 [class*="draw_coin"].draw_coin4 {
+  right: 9vw;
+  top: 28%;
+  -webkit-animation-timing-function: 0.8s;
+          animation-timing-function: 0.8s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+#Homepage #Section3 [class*="draw_coin"].draw_coin5 {
+  right: 6vw;
+  top: 38%;
+  -webkit-animation-timing-function: 1s;
+          animation-timing-function: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#Homepage #Section3 [class*="draw_coin"].draw_coin6 {
+  right: 0px;
+  top: 50%;
+  -webkit-animation-timing-function: 1.2s;
+          animation-timing-function: 1.2s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+#Homepage #Section3 [class*="draw_coin"].draw_coin7 {
+  left: 0px;
+  top: 72%;
+  -webkit-animation-timing-function: 1.2s;
+          animation-timing-function: 1.2s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 #Homepage #Section3 .section_body {
   text-align: center;
   padding-bottom: 28px;
+  z-index: 1;
+  position: relative;
 }
 
 @media (max-width: 800px) {
@@ -1089,7 +1199,7 @@
 
 @media (max-width: 800px) {
   #Homepage #Section7 {
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 }
 
@@ -1116,6 +1226,12 @@
   color: #5070bf;
   max-width: 383px;
   margin: auto;
+}
+
+@media (max-width: 800px) {
+  #Homepage #Section7 .section_title {
+    font-size: 3rem;
+  }
 }
 
 #Homepage #Section7 .section_body .team_card_wrapper {

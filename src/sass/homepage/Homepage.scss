@@ -3,7 +3,10 @@
   #Section1 {
     position: relative;
     overflow: hidden;
-    min-height: 1000px;
+    min-height: 1200px;
+    @media (max-width: 700px){
+      min-height: 900px;
+    }
     @media (min-width: 800px) {
       min-height: 1304px;
     }
@@ -17,6 +20,7 @@
       top: 0;
       left: 0;
       width: 110%;
+      object-position: 0px -100px;
       @media (max-width: 1500px) {
         height: 100%;
       }
@@ -91,12 +95,16 @@
     }
     .circle_img {
       display: inline-block;
-      margin-top: 100px;
-      margin-bottom: 60px;
+      margin-top: 70px;
+      margin-bottom: 2rem;
       position: relative;
       z-index: 2;
+      @media (max-width: 1080px){
+        margin-top: 20rem;
+      }
       @media (max-width: 800px) {
         height: 40vw;
+        
       }
     }
     .section_content {
@@ -215,15 +223,71 @@
     }
   }
   #Section3 {
-    background: url("../../assets/homepage/section_3bg.png") center/ cover
-      no-repeat;
+    background: linear-gradient(180deg, #2570b4 0%, #a5d2f5 100%);
     margin-top: -11rem;
-
+    overflow: hidden;
     padding-top: 13rem;
-
+    position: relative;
+    //.............. draw coin...................
+    [class*="draw_coin"] {
+      position: absolute;
+      animation: 1s linear infinite coin alternate;
+      @keyframes coin {
+        0% {
+          transform: translate(10px, 10px);
+        }
+        100% {
+          transform: translate(30px, 30px);
+        }
+      }
+      &.draw_coin1 {
+        left: 8vw;
+        margin-top: 2vw;
+        animation-timing-function: 0.2s;
+        animation-delay: 0.2s;
+      }
+      &.draw_coin2 {
+        left: 11vw;
+        margin-top: 11vw;
+        animation-timing-function: 0.4s;
+        animation-delay: 0.4s;
+      }
+      &.draw_coin3 {
+        right: 10vw;
+        top: 20%;
+        animation-timing-function: 0.6s;
+        animation-delay: 0.6s;
+      }
+      &.draw_coin4 {
+        right: 9vw;
+        top: 28%;
+        animation-timing-function: 0.8s;
+        animation-delay: 0.8s;
+      }
+      &.draw_coin5 {
+        right: 6vw;
+        top: 38%;
+        animation-timing-function: 1s;
+        animation-delay: 1s;
+      }
+      &.draw_coin6 {
+        right: 0px;
+        top: 50%;
+        animation-timing-function: 1.2s;
+        animation-delay: 1.2s;
+      }
+      &.draw_coin7 {
+        left: 0px;
+        top: 72%;
+        animation-timing-function: 1.2s;
+        animation-delay: 1.2s;
+      }
+    }
     .section_body {
       text-align: center;
       padding-bottom: 28px;
+      z-index: 1;
+      position: relative;
       @media (max-width: 800px) {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -781,7 +845,7 @@
   #Section7 {
     padding-top: 300px;
     @media (max-width: 800px) {
-      padding-top: 10rem;
+      padding-top: 5rem;
     }
     position: relative;
     &::after {
@@ -812,6 +876,9 @@
       color: #5070bf;
       max-width: 383px;
       margin: auto;
+      @media (max-width: 800px) {
+        font-size: 3rem;
+      }
     }
     .section_body {
       .team_card_wrapper {
