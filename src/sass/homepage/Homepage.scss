@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
     min-height: 1200px;
-    @media (max-width: 700px){
+    @media (max-width: 700px) {
       min-height: 900px;
     }
     @media (min-width: 800px) {
@@ -99,12 +99,11 @@
       margin-bottom: 2rem;
       position: relative;
       z-index: 2;
-      @media (max-width: 1080px){
+      @media (max-width: 1080px) {
         margin-top: 20rem;
       }
       @media (max-width: 800px) {
         height: 40vw;
-        
       }
     }
     .section_content {
@@ -738,9 +737,30 @@
     }
   }
   #Section6 {
-    background: url("../../assets/homepage/roadmap_bg.png") center/cover
-      no-repeat;
     position: relative;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      background: url("../../assets/homepage/roadmap_bg.png") 0px 0px / cover
+        no-repeat;
+      position: absolute;
+      width: 140%;
+      height: 100%;
+      left: -40%;
+      top: 0px;
+      animation: 10s linear cloud alternate infinite;
+      z-index: -1;
+      @keyframes cloud {
+        0% {
+          left: -40%;
+        }
+        100% {
+          left: 0%;
+        }
+      }
+    }
+
     .roadmap_draw1 {
       position: absolute;
       bottom: -27%;
